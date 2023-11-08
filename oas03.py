@@ -1,48 +1,16 @@
-#import pyxnat
-import os
-
-# Replace these with your XNAT server details
-xnat_url = 'https://central.xnat.org/'
-#server_url = 'https://central.xnat.org/app/template/XDATScreen_report_xnat_projectData.vm/search_element/xnat:projectData/search_field/xnat:projectData.ID/search_value/OASIS3'
-xnat_user = 'username'
-xnat_pass = 'Password'
-
-# Connect to the XNAT server
-#central=pyxnat.Interface(server=server_url, user=username, password=password)
-
-#central.get('OASIS3/OAS30001')
-
-#print(central)
-
-#import xnat
-#session = xnat.connect(server_url, user='Sanazkv', password='Snz_0612078')
-#session.subjects("")
-
-#download(uri: str, target: str | Path
-
+##Sanaz Kaviani
 
 import os
 import xnat
+
+# Replace these with your XNAT server details
+xnat_url = 'https://central.xnat.org/'
+xnat_user = 'username'
+xnat_pass = 'Password'
 
 # Replace with the specific project, subject, and download path
 project_id = 'OASIS3'
 download_path = 'path_directory'
-
-# Replace with the desired scan type
-scan_type = 'ALL'  # Set to 'ALL' to download all scan types
-
-# Specify the range of subject IDs you want to download
-start_subject_id = 'OAS30002'
-end_subject_id = 'OAS30003'
-
-
-
-import os
-import xnat
-
-# Replace with the specific project, subject, and download path
-project_id = 'OASIS3'
-download_path = '/lustre06/project/6001250/sanazkv/oas/'
 
 # Replace with the desired scan type
 scan_type = 'ALL'  # Set to 'ALL' to download all scan types
